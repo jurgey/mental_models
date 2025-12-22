@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MentalModelEntry",
+  "type": "object",
+  "required": [
+    "model_id",
+    "name",
+    "category",
+    "definition",
+    "domains",
+    "tags",
+    "use_cases",
+    "version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "model_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "use_cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "positive_example": {
+      "type": "string"
+    },
+    "negative_example": {
+      "type": "string"
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disqualifiers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "application_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "counterbalance_models": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_models": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "crna_clinical_overlay": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}
